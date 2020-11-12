@@ -1,0 +1,28 @@
+<head>
+    <title>jquery ui datepicker format dd/mm/yyyy</title>
+    <link type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style type="text/css">
+        .ui-datepicker {
+            font-size: 8pt !important
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="demo">
+            <b>Date:</b> <input type="" name="" ID="txtDate" runat="server" placeholder="dd-mm-yyyy" />
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $("#txtDate").datepicker({
+                    dateFormat: 'dd/mm/yy'
+                });
+            });
+        </script>
+    </form>
+</body>
+
+</html>
